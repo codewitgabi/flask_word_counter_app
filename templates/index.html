@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Flask Word Counter App</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.wrapper {
+			text-align: center;
+			border: 1px solid green;
+		}
+		.label {
+			font-size: 1.3em;
+			font-weight: 500;
+			padding: 18px;
+			color: #fff;
+			background: green;
+		}
+		.form-wrapper {
+			padding: 1em;
+		}
+		textarea {
+			width: 100%;
+			height: 100px;
+			padding: 15px;
+			font-size: 1.2em;
+		}
+		button {
+			padding: 10px 0;
+			font-size: 18px;
+			width: 60%;
+			display: inline-block;
+			margin-top: 10px;
+		}
+		@media only screen and (max-width: 400px) {
+			.wrapper {
+				margin: 3em 20px 1em 20px;
+			}
+		}
+		@media only screen and (min-width: 400px) {
+			.wrapper {
+				margin: 5em 5em;
+			}
+		}
+		@media only screen and (min-width: 500px) {
+			.wrapper {
+				margin: 5em 7em;
+			}
+		}
+		@media only screen and (min-width: 600px) {
+			.wrapper {
+				margin: 5em 10em;
+			}
+		}
+		@media only screen and (min-width: 750px) {
+			.wrapper {
+				margin: 5em 13em;
+			}
+		}
+		@media only screen and (min-width: 850px) {
+			.wrapper {
+				margin: 5em 16em;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<legend class="label">Word Counter</legend>
+		<div class="form-wrapper">
+			<form action= "/show_length/" method="post">
+				<textarea name="text-box" placeholder="Enter Text..."></textarea>
+				<button type="submit">Count Words</button>
+			</form>
+		</div>
+		<p>By codewitgabi &copy; 2022</p>
+		<br>
+	</div>
+</body>
+</html>
