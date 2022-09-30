@@ -12,4 +12,8 @@ def show_length():
 	if request.method == "POST":
 		words = request.form["text-box"]
 		word_length = len(words.split())
-		return "Word Length: " + str(word_length)
+		return "<h2>Words: </h2> " + words + "<p>Length: </p>" + str(word_length)
+
+
+if __name__ == '__main__':
+	app.run(debug= True)
